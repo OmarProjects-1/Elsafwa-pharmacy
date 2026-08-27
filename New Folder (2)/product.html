@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>المنتج | صيدلية الصفوة</title>
+<meta name="description" content="تفاصيل المنتج — صيدلية الصفوة، منتجات أصلية 100% مع توصيل. اطلب واتساب 01033207500">
+<meta name="theme-color" content="#0e3a2f">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@600;700;800;900&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="icon" href="logo.png">
+
+<style>
+:root{
+  --g950:#07231c; --g900:#0b2f27; --g800:#0e3a2f; --g700:#14503f; --g600:#1d6350;
+  --gold:#c9a445; --gold-soft:#e6cf8f; --gold-deep:#8f6d20;
+  --terra:#c65f4a; --terra-d:#a94434;
+  --cream:#f7f2e5; --cream2:#efe8d5; --line:#e3dac4;
+  --ink:#182720; --muted:#5c675f;
+  --wa:#1fae53; --wa-dark:#178f43;
+  --r:20px;
+  --sh:0 14px 40px rgba(11,47,39,.10);
+  --sh-lg:0 24px 60px rgba(11,47,39,.16);
+  --ff-h:'Cairo',sans-serif; --ff-b:'Almarai',sans-serif; --ff-num:'IBM Plex Sans Arabic',sans-serif;
+  --header-h:76px;
+}
+@media(max-width:560px){:root{--header-h:68px}}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--ff-b);color:var(--ink);line-height:1.9;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+  background-color:#f6f0e1;
+  background-image:
+    radial-gradient(1100px 720px at 86% -8%, rgba(95,125,88,.18), transparent 60%),
+    radial-gradient(950px 660px at -12% 40%, rgba(201,164,69,.16), transparent 60%),
+    radial-gradient(1100px 800px at 50% 118%, rgba(20,80,63,.15), transparent 65%),
+    linear-gradient(180deg,#f9f5ea,#f1e9d6);
+  background-attachment:fixed;
+}
+@media(max-width:768px){body{background-attachment:scroll}}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+button{font-family:inherit;cursor:pointer;border:0;background:none}
+svg{display:block}
+img{display:block;max-width:100%}
+::selection{background:var(--gold-soft);color:var(--g900)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
+[hidden]{display:none!important}
+body.menu-open{overflow:hidden}
+.container{width:min(1240px,93%);margin-inline:auto}
+h1,h2,h3,.btn{font-family:var(--ff-h)}
+.num{font-family:var(--ff-num)}
+
+/* Logo */
+.logo-mark{position:relative;overflow:hidden;flex-shrink:0}
+.logo-mark .logo-fb{position:absolute;top:50%;right:50%;transform:translate(50%,-50%)}
+.logo-mark img{position:absolute;top:50%;right:50%;transform:translate(50%,-50%);width:145%;height:145%;object-fit:contain;mix-blend-mode:screen;filter:saturate(1.12) brightness(1.05)}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 27px;border-radius:999px;font-weight:700;font-size:.95rem;line-height:1.5;transition:.22s;white-space:nowrap}
+.btn:active{transform:scale(.98)}
+.btn-wa{background:var(--wa);color:#fff;box-shadow:0 10px 24px rgba(31,174,83,.3)}
+.btn-wa:hover{background:var(--wa-dark);transform:translateY(-2px)}
+.btn-line{border:1.5px solid var(--line);color:var(--ink);background:#fffdf8}
+.btn-line:hover{border-color:var(--g700);color:var(--g700);transform:translateY(-2px)}
+
+/* Topbar + Header */
+.topbar{background:var(--g900);color:var(--cream2);font-size:.84rem;position:relative;z-index:101}
+.topbar-in{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:8px 0}
+.tb-item{display:inline-flex;align-items:center;gap:7px}
+.tb-item svg{color:var(--gold-soft)}
+.tb-social{display:flex;gap:8px}
+.tb-social a{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;border:1px solid rgba(230,207,143,.35);color:var(--gold-soft);transition:.2s}
+.tb-social a:hover{background:var(--gold);border-color:var(--gold);color:var(--g950);transform:translateY(-2px)}
+@media(max-width:720px){.tb-hours{display:none}.topbar-in{justify-content:center}}
+.header{position:sticky;top:0;z-index:100;background:rgba(247,242,229,.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid transparent;transition:.3s}
+.header.scrolled{border-color:var(--line);box-shadow:0 8px 30px rgba(11,47,39,.07)}
+.nav-in{display:flex;align-items:center;gap:14px;height:var(--header-h)}
+.logo{display:flex;align-items:center;gap:11px;flex-shrink:0}
+.logo-mark{width:44px;height:44px;border-radius:13px;background:linear-gradient(145deg,var(--g600),var(--g900));box-shadow:0 6px 16px rgba(14,58,47,.25)}
+.logo-txt b{display:block;font-family:var(--ff-h);font-weight:800;font-size:1.15rem;color:var(--g900);line-height:1.3}
+.logo-txt span{display:block;font-family:var(--ff-num);font-size:.55rem;letter-spacing:.24em;color:var(--gold-deep);font-weight:600}
+.nav-cats{display:flex;align-items:center;gap:2px;flex:1;justify-content:center;min-width:0}
+.nav-cats a{padding:8px 13px;border-radius:10px;font-weight:700;font-size:.93rem;color:var(--ink);transition:.2s;white-space:nowrap}
+.nav-cats a:hover{color:var(--g700);background:var(--cream2)}
+.nav-cats a.nav-contact{color:var(--muted)}
+.nav-utils{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.nav-search{position:relative;flex:1;max-width:420px}
+.nav-search input{width:100%;padding:13px 48px 13px 18px;border-radius:999px;border:2px solid var(--gold);background:#fffdf8;font-family:var(--ff-b);font-size:.95rem;font-weight:700;color:var(--ink);transition:.25s;box-shadow:0 6px 18px rgba(201,164,69,.18)}
+.nav-search input::placeholder{color:#a09a89;font-weight:400}
+.nav-search input:focus{outline:none;border-color:var(--gold-deep);box-shadow:0 0 0 4px rgba(201,164,69,.22)}
+.nav-search button{position:absolute;top:50%;right:6px;transform:translateY(-50%);width:36px;height:36px;border-radius:50%;background:linear-gradient(145deg,#e2c26a,var(--gold));color:#fff;display:grid;place-items:center;transition:.2s}
+.nav-search button:hover{background:var(--gold-deep)}
+.burger{display:none;flex-direction:column;gap:5px;width:42px;height:42px;align-items:center;justify-content:center;border-radius:12px;border:1.5px solid var(--line);background:#fffdf8}
+.burger span{width:18px;height:2px;background:var(--g900);border-radius:2px;transition:.3s}
+.burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* ===== Mobile menu ===== */
+.mobile-menu{display:none}
+@media(max-width:1240px){
+  .nav-cats{display:none}
+  .burger{display:flex}
+  .mobile-menu.open{
+    display:flex;flex-direction:column;align-items:stretch;
+    position:absolute;top:100%;right:0;left:0;
+    background:#f7f2e5;border-bottom:1px solid var(--line);
+    padding:12px 5% 18px;box-shadow:var(--sh);z-index:99;
+  }
+  .mobile-menu.open a{padding:12px 14px;border-radius:10px;font-size:1rem;font-weight:500;color:var(--ink)}
+  .mobile-menu.open a:hover{background:var(--cream2);color:var(--g700)}
+  .mobile-cta{display:flex;gap:10px;margin-top:12px;padding-top:14px;border-top:1px dashed var(--line)}
+  .mobile-cta .btn{flex:1;padding:12px 10px;font-size:.9rem}
+}
+@media(max-width:640px){
+  :root{--header-h:128px}
+  .nav-in{flex-wrap:wrap;height:auto;padding:10px 0 12px;row-gap:10px}
+  .nav-utils{flex:1;flex-wrap:wrap;row-gap:10px;justify-content:flex-end}
+  .nav-search{order:5;flex:1 1 100%;max-width:none}
+  .nav-search input,.nav-search input:focus{font-size:16px}
+  .logo-mark{width:40px;height:40px}
+  .logo-txt b{font-size:1.02rem}
+}
+@media(max-width:400px){.logo-txt span{display:none}}
+
+/* ===== Breadcrumb ===== */
+.crumbs{display:flex;align-items:center;flex-wrap:wrap;gap:8px;padding:26px 0 6px;font-size:.86rem;color:var(--muted);animation:fadeUp .5s ease both}
+.crumbs a{color:var(--muted);transition:.2s}
+.crumbs a:hover{color:var(--g700)}
+.crumbs .sep{color:var(--gold-deep)}
+.crumbs .here{color:var(--g900);font-weight:700}
+
+/* ===== Product page ===== */
+.pd{padding:18px 0 90px}
+.pd-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:44px;align-items:start}
+.pd-art{position:relative;display:grid;place-items:center;min-height:560px;max-height:700px;padding:20px;border-radius:28px;background:#fff;border:1px solid var(--gold);box-shadow:var(--sh);overflow:hidden;animation:fadeUp .55s ease .08s both}
+.pd-art::before{content:"";position:absolute;width:300px;height:300px;border-radius:50%;border:1.5px dashed var(--cc);opacity:.25;top:-90px;left:-90px}
+.pd-art::after{content:"";position:absolute;width:220px;height:220px;border-radius:50%;border:1px solid var(--cc);opacity:.18;bottom:-70px;right:-60px}
+.pd-art svg{width:min(300px,72%);height:auto;animation:mFloat 5.5s ease-in-out infinite;position:relative;z-index:1}
+.pd-art img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;position:relative;z-index:1;animation:mFloat 5.5s ease-in-out infinite}
+@keyframes mFloat{50%{transform:translateY(-12px)}}
+.pd-badge{position:absolute;top:18px;right:18px;z-index:2;font-family:var(--ff-h);font-weight:700;font-size:.78rem;color:var(--ccd);background:#fff;border:1.5px solid var(--line);border-radius:999px;padding:6px 16px}
+.pd-info{animation:fadeUp .55s ease .16s both}
+.pd-brand{font-family:var(--ff-num);font-size:.85rem;font-weight:600;color:var(--gold-deep);letter-spacing:.04em}
+.pd-info h1{font-size:clamp(1.5rem,3vw,2.1rem);font-weight:800;color:var(--g900);line-height:1.5;margin:4px 0 14px}
+.pd-cat{display:inline-flex;align-items:center;gap:7px;font-family:var(--ff-h);font-weight:700;font-size:.8rem;color:var(--ccd);background:var(--cct);border-radius:999px;padding:6px 16px;margin-bottom:20px}
+.pd-cat svg{width:14px;height:14px}
+.pd-prices{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:20px 24px;background:#fffdf8;border:1.5px solid var(--line);border-radius:18px;margin-bottom:22px}
+.pd-price{font-family:var(--ff-num);font-weight:600;font-size:2rem;color:var(--g900);line-height:1.2}
+.pd-price small{font-size:.5em;font-weight:500}
+.pd-old{font-family:var(--ff-num);font-size:1.1rem;color:#79837b;text-decoration:line-through}
+.pd-off{font-family:var(--ff-num);font-size:.8rem;font-weight:700;color:#fff;background:linear-gradient(135deg,#d4796a,var(--terra-d));padding:5px 14px;border-radius:999px}
+.pd-desc{color:var(--muted);font-size:1rem;line-height:2;margin-bottom:26px}
+.pd-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:22px}
+.pd-actions .btn{padding:15px 30px;font-size:1rem}
+.pd-notes{display:grid;gap:9px}
+.pd-notes li{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:.9rem}
+.pd-notes svg{color:var(--gold-deep);flex-shrink:0}
+@media(max-width:880px){
+  .pd-grid{grid-template-columns:1fr;gap:28px}
+  .pd-art{min-height:420px;max-height:500px;padding:16px}
+  .pd-art svg{width:min(220px,60%)}
+}
+
+/* ===== Related ===== */
+.pd-related{padding:20px 0 100px;animation:fadeUp .55s ease .25s both}
+.pd-related h2{font-size:1.35rem;font-weight:800;color:var(--g900);margin-bottom:22px;display:flex;align-items:center;gap:12px}
+.pd-related h2::after{content:"";width:60px;height:3px;border-radius:3px;background:linear-gradient(90deg,var(--cc),transparent)}
+.rel-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px}
+.rel-card{background:#fff;border:1px solid var(--gold);border-radius:14px;overflow:hidden;transition:transform .22s,box-shadow .22s,border-color .22s;display:block}
+.rel-card:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(11,47,39,.10);border-color:var(--gold)}
+.rel-art{height:240px;display:grid;place-items:center;background:#fff;border-bottom:1px solid var(--line);overflow:hidden}
+.rel-art img{max-width:100%;max-height:100%;height:100%;width:auto;object-fit:contain;transition:transform .35s}
+.rel-card:hover .rel-art img{transform:scale(1.03)}
+.rel-art svg{transition:transform .35s}
+.rel-card:hover .rel-art svg{transform:translateY(-4px) scale(1.05)}
+.rel-body{padding:12px 14px 14px;display:flex;flex-direction:column;flex:1;min-width:0}
+.rel-name{font-weight:600;font-size:.9rem;line-height:1.6;color:var(--ink);min-height:3.2em;margin:2px 0 12px}
+.rel-price{font-family:var(--ff-num);font-weight:700;font-size:1.05rem;color:var(--g900);margin-top:auto}
+.rel-price small{font-size:.7em;font-weight:600}
+@media(max-width:560px){.rel-grid{grid-template-columns:repeat(2,1fr);gap:11px}}
+@media(max-width:560px){
+  .rel-art{height:200px}
+  .rel-body{padding:10px 12px 12px}
+  .rel-name{font-size:.9rem;min-height:0;margin-bottom:10px}
+  .rel-price{font-size:1rem}
+}
+
+/* Not found */
+.notfound{text-align:center;padding:110px 20px}
+.notfound b{font-family:var(--ff-h);font-size:1.4rem;color:var(--g900);display:block;margin-bottom:6px}
+.notfound p{color:var(--muted);margin-bottom:24px}
+
+/* Toast */
+.toast{position:fixed;bottom:26px;right:50%;transform:translate(50%,20px);background:var(--g900);color:#fff;padding:11px 22px;border-radius:999px;font-family:var(--ff-h);font-weight:700;font-size:.9rem;box-shadow:0 14px 34px rgba(7,35,28,.35);opacity:0;pointer-events:none;transition:.3s;z-index:400}
+.toast.show{opacity:1;transform:translate(50%,0)}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+
+/* ===== Footer ===== */
+.footer{position:relative;background:var(--g950);color:rgba(250,247,240,.78);overflow:hidden}
+.f-grid{display:grid;grid-template-columns:1.4fr .7fr 1.2fr;gap:44px;padding:64px 0 48px;position:relative;z-index:1}
+.f-brand .logo-mark{margin-bottom:16px;width:52px;height:52px}
+.f-brand b{display:block;font-family:var(--ff-h);font-weight:800;font-size:1.25rem;color:#fff}
+.f-brand>span{display:block;font-family:var(--ff-num);font-size:.58rem;letter-spacing:.26em;color:var(--gold-soft);margin:2px 0 16px}
+.f-brand p{font-size:.9rem;max-width:320px}
+.f-social{display:flex;gap:10px;margin-top:20px}
+.f-social a{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(230,207,143,.3);color:var(--gold-soft);transition:.22s}
+.f-social a:hover{background:var(--gold);border-color:var(--gold);color:var(--g950);transform:translateY(-3px)}
+.f-col h4{font-family:var(--ff-h);color:#fff;font-size:1.02rem;font-weight:700;margin-bottom:18px;position:relative;padding-bottom:10px}
+.f-col h4::after{content:"";position:absolute;bottom:0;right:0;width:32px;height:3px;border-radius:3px;background:var(--gold)}
+.f-col ul{display:grid;gap:10px}
+.f-col a{font-size:.9rem;transition:.2s}
+.f-col a:hover{color:var(--gold-soft);padding-inline-start:4px}
+.f-contact li{display:flex;gap:10px;align-items:flex-start;font-size:.9rem;margin-bottom:12px}
+.f-contact svg{color:var(--gold-soft);flex-shrink:0;margin-top:6px}
+.f-contact .lbl{color:var(--gold-soft);font-weight:700}
+.f-bottom{border-top:1px solid rgba(250,247,240,.12);padding:20px 0;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:.82rem;color:rgba(250,247,240,.6);position:relative;z-index:1}
+@media(max-width:860px){.f-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.f-grid{grid-template-columns:1fr;gap:34px;padding:50px 0 40px}}
+
+/* ===== Reveal ===== */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="branch" viewBox="0 0 220 220">
+      <g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M28 200 C64 168 84 128 92 88 C97 62 106 34 128 14"/>
+        <path d="M62 168 C46 166 32 156 26 140 C44 140 58 152 62 168 Z"/>
+        <path d="M88 108 C104 104 116 92 120 74 C102 76 90 90 88 108 Z"/>
+        <path d="M92 88 C76 84 66 72 64 56 C80 60 90 72 92 88 Z"/>
+        <path d="M108 46 C120 40 126 30 128 16 C114 20 108 32 108 46 Z"/>
+        <circle cx="50" cy="128" r="2.6"/><circle cx="118" cy="58" r="2.6"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ===== TOPBAR ===== -->
+<div class="topbar">
+  <div class="container topbar-in">
+    <span class="tb-item tb-hours">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 1.8"/></svg>
+      مفتوح 24 ساعة — طوال أيام الأسبوع
+    </span>
+    <div class="tb-social">
+      <a class="tb-wa" data-wa="مرحبًا صيدلية الصفوة 👋" href="#" target="_blank" rel="noopener noreferrer" aria-label="تواصل معنا عبر واتساب"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.4a9.5 9.5 0 0 0-8.2 14.3L2.4 21.6l5-1.3A9.5 9.5 0 1 0 12 2.4zm0 1.9a7.6 7.6 0 1 1-3.9 14.1l-.4-.2-3 .8.8-2.9-.2-.4A7.6 7.6 0 0 1 12 4.3z"/><path d="M8.9 8c.3-.7 1.4-.8 1.7-.1l.6 1.4c.1.3.1.6-.1.8l-.6.7c.5 1 1.4 1.9 2.4 2.4l.7-.6c.2-.2.5-.3.8-.2l1.4.6c.7.3.6 1.4-.1 1.7-.9.4-2 .3-3-.2a8.3 8.3 0 0 1-3.6-3.6c-.5-1-.6-2.1-.2-2.9z" fill="#1fae53"/></svg></a>
+      <a href="https://www.facebook.com/share/1cYHu82np8/" target="_blank" rel="noopener noreferrer" aria-label="صفحتنا على فيسبوك"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8.5h3V5h-3c-2.5 0-4.5 2-4.5 4.5V12H7v3.5h2.5V22H13v-6.5h2.7l.55-3.5H13V9.5c0-.55.45-1 1-1z"/></svg></a>
+      <a href="https://www.instagram.com/elsafwapharmacy" target="_blank" rel="noopener noreferrer" aria-label="حسابنا على إنستجرام"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="3.8"/><circle cx="17" cy="7" r="1" fill="currentColor" stroke="none"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== HEADER ===== -->
+<header class="header" id="header">
+  <div class="container nav-in">
+    <a href="index.html" class="logo" aria-label="صيدلية الصفوة — الرئيسية">
+      <span class="logo-mark" aria-hidden="true">
+        <svg class="logo-fb" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c9a445" stroke-width="3.2" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg>
+        <img src="logo.png" alt="" onerror="this.remove()" onload="var f=this.parentElement.querySelector('.logo-fb'); if(f) f.style.display='none'">
+      </span>
+      <span class="logo-txt"><b>صيدلية الصفوة</b><span>EL-SAFWA PHARMACY</span></span>
+    </a>
+
+    <nav class="nav-cats" aria-label="أقسام المنتجات">
+      <a href="products.html#meds">الأدوية</a>
+      <a href="products.html#skin">العناية بالبشرة</a>
+      <a href="products.html#hair">العناية بالشعر</a>
+      <a href="products.html#body">العناية بالجسم</a>
+      <a href="products.html#baby">الأم والطفل</a>
+      <a href="products.html#vitamins">فيتامينات</a>
+      <a href="index.html#contact" class="nav-contact">تواصل معنا</a>
+    </nav>
+
+    <div class="nav-utils">
+      <form class="nav-search" role="search" action="products.html" method="get">
+        <input type="search" name="q" placeholder="ابحث عن منتج، ماركة…" aria-label="ابحث عن منتج" autocomplete="off" spellcheck="false">
+        <button type="submit" aria-label="بحث">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg>
+        </button>
+      </form>
+
+      <button class="burger" id="burger" aria-label="فتح القائمة" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
+    </div>
+
+    <nav class="mobile-menu" id="mobileMenu" aria-label="قائمة الجوال">
+      <a href="index.html">الرئيسية</a>
+      <a href="products.html">كل المنتجات</a>
+      <a href="products.html#meds">الأدوية</a>
+      <a href="products.html#skin">العناية بالبشرة</a>
+      <a href="products.html#hair">العناية بالشعر</a>
+      <a href="products.html#body">العناية بالجسم</a>
+      <a href="products.html#baby">الأم والطفل</a>
+      <a href="products.html#vitamins">فيتامينات ومكملات</a>
+      <a href="index.html#contact">تواصل معنا</a>
+      <div class="mobile-cta">
+              <a class="btn btn-wa" data-wa="مرحبًا صيدلية الصفوة 👋" href="#" target="_blank" rel="noopener noreferrer">واتساب</a>
+              <a class="btn btn-line num" style="direction:ltr" href="tel:+201033207500">01033207500</a>
+            </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <nav class="crumbs" id="crumbs" aria-label="مسار التنقل"></nav>
+  </div>
+
+  <!-- Product -->
+  <section class="pd" id="pdWrap" hidden>
+    <div class="container pd-grid">
+      <div class="pd-art" id="pdArt">
+        <span class="pd-badge" id="pdBadge">منتج أصلي 100%</span>
+      </div>
+      <div class="pd-info">
+        <span class="pd-brand" id="pdBrand"></span>
+        <h1 id="pdName"></h1>
+        <span class="pd-cat" id="pdCat"></span>
+        <div class="pd-prices" id="pdPrices"></div>
+        <p class="pd-desc" id="pdDesc"></p>
+        <div class="pd-actions">
+                  <a class="btn btn-wa" id="pdOrder" target="_blank" rel="noopener noreferrer">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.4a9.5 9.5 0 0 0-8.2 14.3L2.4 21.6l5-1.3A9.5 9.5 0 1 0 12 2.4zm0 1.9a7.6 7.6 0 1 1-3.9 14.1l-.4-.2-3 .8.8-2.9-.2-.4A7.6 7.6 0 0 1 12 4.3z"/><path d="M8.9 8c.3-.7 1.4-.8 1.7-.1l.6 1.4c.1.3.1.6-.1.8l-.6.7c.5 1 1.4 1.9 2.4 2.4l.7-.6c.2-.2.5-.3.8-.2l1.4.6c.7.3.6 1.4-.1 1.7-.9.4-2 .3-3-.2a8.3 8.3 0 0 1-3.6-3.6c-.5-1-.6-2.1-.2-2.9z" fill="#1fae53"/></svg>
+                    اطلب عبر واتساب
+                  </a>
+                  <a class="btn btn-line num" style="direction:ltr" href="tel:+201033207500">01033207500</a>
+                  <button class="btn btn-line" id="pdShare" type="button">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="18" cy="5" r="2.6"/><circle cx="6" cy="12" r="2.6"/><circle cx="18" cy="19" r="2.6"/><path d="M8.4 10.8l7.2-4.1M8.4 13.2l7.2 4.1"/></svg>
+            مشاركة المنتج
+          </button>
+        </div>
+        <ul class="pd-notes">
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 6h11v9h-11z"/><path d="M13.5 9.5h3.6l2.4 2.5v3h-6"/><circle cx="6.3" cy="17.6" r="1.8"/><circle cx="16.2" cy="17.6" r="1.8"/></svg> توصيل لحد باب البيت — التكلفة حسب المسافة</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 1.8"/></svg> الصيدلية مفتوحة 24 ساعة — الطلب في أي وقت</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 2.6v5.1c0 4.6-3 7.8-7 9.8-4-2-7-5.2-7-9.8V5.6z"/><path d="M9 11.8l2.1 2.1 4-4.2"/></svg> منتجات أصلية من موزعين معتمدين</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related -->
+  <section class="pd-related" id="pdRelated" hidden>
+    <div class="container">
+      <h2 id="relTitle">من نفس القسم</h2>
+      <div class="rel-grid" id="relGrid"></div>
+    </div>
+  </section>
+
+  <!-- Not found -->
+  <div class="notfound" id="notFound" hidden>
+    <b>المنتج غير موجود</b>
+    <p>ممكن الرابط قديم أو المنتج اتمسح — تصفّح باقي منتجاتنا</p>
+    <a class="btn btn-wa" href="products.html">كل المنتجات</a>
+  </div>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <svg class="branch" style="width:300px;height:300px;bottom:-80px;left:-60px;transform:rotate(14deg);opacity:.08" aria-hidden="true"><use href="#branch"/></svg>
+  <div class="container">
+    <div class="f-grid">
+      <div class="f-brand">
+        <span class="logo-mark" aria-hidden="true">
+          <svg class="logo-fb" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c9a445" stroke-width="3.2" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg>
+          <img src="logo.png" alt="" onerror="this.remove()" onload="var f=this.parentElement.querySelector('.logo-fb'); if(f) f.style.display='none'">
+        </span>
+        <b>صيدلية الصفوة</b><span>EL-SAFWA PHARMACY</span>
+        <p>صيدلية متكاملة في النزهة، مصر الجديدة — أدوية ومنتجات عناية أصلية 100%، في خدمتكم 24 ساعة مع توصيل لكل المناطق.</p>
+        <div class="f-social">
+          <a href="https://www.facebook.com/share/1cYHu82np8/" target="_blank" rel="noopener noreferrer" aria-label="صفحتنا على فيسبوك"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8.5h3V5h-3c-2.5 0-4.5 2-4.5 4.5V12H7v3.5h2.5V22H13v-6.5h2.7l.55-3.5H13V9.5c0-.55.45-1 1-1z"/></svg></a>
+          <a href="https://www.instagram.com/elsafwapharmacy" target="_blank" rel="noopener noreferrer" aria-label="حسابنا على إنستجرام"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="3.8"/><circle cx="17" cy="7" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a data-wa="مرحبًا صيدلية الصفوة 👋" href="#" target="_blank" rel="noopener noreferrer" aria-label="تواصل معنا عبر واتساب"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.4a9.5 9.5 0 0 0-8.2 14.3L2.4 21.6l5-1.3A9.5 9.5 0 1 0 12 2.4zm0 1.9a7.6 7.6 0 1 1-3.9 14.1l-.4-.2-3 .8.8-2.9-.2-.4A7.6 7.6 0 0 1 12 4.3z"/><path d="M8.9 8c.3-.7 1.4-.8 1.7-.1l.6 1.4c.1.3.1.6-.1.8l-.6.7c.5 1 1.4 1.9 2.4 2.4l.7-.6c.2-.2.5-.3.8-.2l1.4.6c.7.3.6 1.4-.1 1.7-.9.4-2 .3-3-.2a8.3 8.3 0 0 1-3.6-3.6c-.5-1-.6-2.1-.2-2.9z" fill="#1fae53"/></svg></a>
+        </div>
+      </div>
+      <div class="f-col">
+        <h4>روابط</h4>
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="products.html">المنتجات</a></li>
+          <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>تواصل معنا</h4>
+        <ul class="f-contact">
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>8 شارع بلال بن رباح، المتفرع من عمر بن ياسر — النزهة، مصر الجديدة</span></li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h3.5L10 8l-2 1.5a12.5 12.5 0 0 0 6.5 6.5L16 14l4 1.5V19a2 2 0 0 1-2 2A15.5 15.5 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><span style="direction:ltr;display:inline-block"><span class="lbl">واتساب:</span><a data-wa="مرحبًا صيدلية الصفوة 👋" href="#" target="_blank" rel="noopener noreferrer" class="num">01033207500</a> · <span class="lbl">أرضي:</span><a href="tel:+20226245601" class="num">0226245601</a> · <span class="lbl">موبايل:</span><a href="tel:+201557475200" class="num">01557475200</a></span></li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 6h11v9h-11z"/><path d="M13.5 9.5h3.6l2.4 2.5v3h-6"/><circle cx="6.3" cy="17.6" r="1.8"/><circle cx="16.2" cy="17.6" r="1.8"/></svg><span>توصيل متاح — التكلفة حسب المسافة</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>© <span id="year" class="num">2025</span> صيدلية الصفوة — جميع الحقوق محفوظة</span>
+      <span>صحتك تهمنا 💚</span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="data.js"></script>
+<script>
+document.querySelectorAll('[data-wa]').forEach(a => { a.href = waLink(a.dataset.wa); });
+const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
+
+/* ===== Read ?p= and render ===== */
+const pid = new URLSearchParams(location.search).get('p');
+const p   = PRODUCTS.find(x => x.id === pid);
+const c   = p ? CATMAP[p.cat] : null;
+
+if (p && c){
+  document.title = p.name + ' | صيدلية الصفوة';
+
+  /* breadcrumb */
+  document.getElementById('crumbs').innerHTML =
+    '<a href="index.html">الرئيسية</a><span class="sep">←</span>' +
+    '<a href="products.html">المنتجات</a><span class="sep">←</span>' +
+    '<a href="products.html#'+c.id+'">'+c.name+'</a><span class="sep">←</span>' +
+    '<span class="here">'+esc(p.name)+'</span>';
+
+  /* art + tint */
+  const artEl = document.getElementById('pdArt');
+  artEl.classList.add(c.cls);
+  artEl.insertAdjacentHTML('beforeend', p.img
+    ? '<img src="'+esc(p.img)+'" alt="'+esc(p.name)+'">'
+    : productArt(p));
+
+  /* info */
+  document.getElementById('pdBrand').textContent = p.brand;
+  document.getElementById('pdName').textContent  = p.name;
+  document.getElementById('pdCat').innerHTML =
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+c.icon+'</svg>'+c.name;
+  const off = p.old ? Math.round((1 - p.price / p.old) * 100) : 0;
+  document.getElementById('pdPrices').innerHTML =
+    '<span class="pd-price">'+p.price.toLocaleString('en-US')+' <small>ج.م</small></span>' +
+    (p.old ? '<span class="pd-old">'+p.old.toLocaleString('en-US')+'</span>' : '') +
+    (off ? '<span class="pd-off">وفّر '+off+'%</span>' : '');
+  document.getElementById('pdDesc').textContent = p.desc ||
+    'منتج أصلي 100% متوفر الآن في صيدلية الصفوة بالنزهة. اطلبه الآن عبر واتساب واستلمه لحد باب البيت — والتوصيل حسب المسافة.';
+  document.getElementById('pdOrder').href = waLink('مرحبًا صيدلية الصفوة 👋\nأريد طلب: '+p.name+'\nالسعر: '+p.price+' ج.م');
+
+  document.getElementById('pdWrap').hidden = false;
+
+  /* SEO: Product schema */
+  const schema = document.createElement('script');
+  schema.type = 'application/ld+json';
+  schema.textContent = JSON.stringify({
+    "@context":"https://schema.org","@type":"Product",
+    "name":p.name,"brand":{"@type":"Brand","name":p.brand},
+    "description":p.desc||p.name,
+    "offers":{"@type":"Offer","priceCurrency":"EGP","price":p.price,"availability":"https://schema.org/InStock"}
+  });
+  document.head.appendChild(schema);
+
+  /* related: same category */
+  const rel = PRODUCTS.filter(x => x.cat === p.cat && x.id !== p.id).slice(0,5);
+  if (rel.length){
+    document.getElementById('relTitle').textContent = 'من نفس القسم — ' + c.name;
+    document.getElementById('relGrid').innerHTML = rel.map(r => {
+      const ro = r.old ? Math.round((1-r.price/r.old)*100) : 0;
+      return '<a class="rel-card '+c.cls+'" href="product.html?p='+encodeURIComponent(r.id)+'">'+
+        '<div class="rel-art">'+(r.img?'<img src="'+esc(r.img)+'" alt="'+esc(r.name)+'" loading="lazy">':productArt(r))+'</div>'+
+        '<div class="rel-body"><div class="rel-name">'+esc(r.name)+'</div>'+
+        '<div class="rel-price">'+r.price.toLocaleString('en-US')+' <small>ج.م</small>'+(ro?' <span class="pd-off" style="font-size:.62rem;padding:2px 8px;margin-inline-start:5px">-'+ro+'%</span>':'')+'</div></div></a>';
+    }).join('');
+    document.getElementById('pdRelated').hidden = false;
+  }
+
+  /* Share */
+  const toast = document.getElementById('toast');
+  let toastT;
+  const showToast = msg => { toast.textContent = msg; toast.classList.add('show'); clearTimeout(toastT); toastT = setTimeout(()=>toast.classList.remove('show'), 2200); };
+  document.getElementById('pdShare').addEventListener('click', async () => {
+    const url = location.href;
+    if (navigator.share){
+      try{ await navigator.share({ title:p.name+' — صيدلية الصفوة', text:p.name+' بسعر '+p.price+' ج.م', url }); }catch(e){}
+    } else {
+      try{ await navigator.clipboard.writeText(url); showToast('تم نسخ رابط المنتج ✓'); }
+      catch(e){
+        const t=document.createElement('textarea'); t.value=url; document.body.appendChild(t); t.select();
+        try{ document.execCommand('copy'); showToast('تم نسخ رابط المنتج ✓'); }catch(_){ showToast(url); }
+        t.remove();
+      }
+    }
+  });
+} else {
+  document.getElementById('notFound').hidden = false;
+}
+
+/* ===== Header / menu ===== */
+const header   = document.getElementById('header');
+addEventListener('scroll', () => header.classList.toggle('scrolled', scrollY > 8), {passive:true});
+const burger   = document.getElementById('burger');
+const mobileMenu = document.getElementById('mobileMenu');
+function setMenu(open){
+  mobileMenu.classList.toggle('open', open);
+  burger.classList.toggle('open', open);
+  burger.setAttribute('aria-expanded', open);
+  burger.setAttribute('aria-label', open ? 'إغلاق القائمة' : 'فتح القائمة');
+  document.body.classList.toggle('menu-open', open);
+}
+burger.addEventListener('click', e => { e.stopPropagation(); setMenu(!mobileMenu.classList.contains('open')); });
+document.addEventListener('click', e => {
+  if (mobileMenu.classList.contains('open') && !mobileMenu.contains(e.target) && !burger.contains(e.target)) setMenu(false);
+});
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && mobileMenu.classList.contains('open')) setMenu(false); });
+mobileMenu.addEventListener('click', e => { if (e.target.tagName === 'A') setMenu(false); });
+
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
